@@ -1,6 +1,7 @@
 package myloops.controller;
 
-public class MyLoopsController {
+public class MyLoopsController 
+{
 	
 	private int countDown;
 	private String tommorow;
@@ -22,6 +23,11 @@ public class MyLoopsController {
 			if (index == 17)
 			{
 				System.out.println(tommorow);
+				
+			}
+			else 
+			{
+				System.out.println("      ");
 			}
 			System.out.println("What does this do really " + index);
 		}
