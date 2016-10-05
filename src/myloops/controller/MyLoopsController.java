@@ -5,11 +5,14 @@ public class MyLoopsController
 	
 	private int countDown;
 	private String tommorow;
+	private boolean master;
 	
 	public void start()
 	{
 		this.countDown = 23;
 		this.tommorow = "Funner than life";
+		this.master = true;
+		
 		while (countDown > 0 )
 		{
 			
@@ -18,15 +21,41 @@ public class MyLoopsController
 		}
 		System.out.println("You're outta time!");
 		
+		
 		for (int index = 23; index >= 0; index--)
 		{
 			if (index == 17)
 			{
 				System.out.println(tommorow);
-				
+				if (tommorow.equals("Funner than life"))
+				{
+					tommorow = "No longer any fun";
+					if (master == false)
+					{
+						System.out.println(tommorow);
+						if (tommorow.equalsIgnoreCase("No longer any fun"))
+						{
+							countDown = 0;
+						}
+						else if (tommorow.equals("name"))
+						{
+							System.out.println("no this shouldnt show");
+						}
+						
+						else
+						{
+							tommorow = "this is random giberish no one will see";
+						}
+					}
+					else 
+					{
+						System.out.println("You are a special and wonderful person with a hear that could ecncompase the Earth and moon and further");
+					}
+				}
 			}
 			else 
 			{
+				
 				System.out.println("      ");
 			}
 			System.out.println("What does this do really " + index);
