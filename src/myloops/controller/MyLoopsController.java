@@ -21,6 +21,12 @@ public class MyLoopsController
 		}
 		System.out.println("You're outta time!");
 		
+		while (countDown == 0)
+		{
+			System.out.println("whoops removed too many!");
+			countDown = countDown + 1;
+		}
+		System.out.println("fixed");
 		
 		for (int index = 23; index >= 0; index--)
 		{
@@ -50,6 +56,7 @@ public class MyLoopsController
 					else 
 					{
 						System.out.println("You are a special and wonderful person with a hear that could ecncompase the Earth and moon and further");
+					
 					}
 				}
 			}
@@ -59,6 +66,10 @@ public class MyLoopsController
 				System.out.println("      ");
 			}
 			System.out.println("What does this do really " + index);
+		}
+		for (int index = 2; index >=0; index--)
+		{
+			System.out.println("Exceeding requirements");
 		}
 	}
 	
